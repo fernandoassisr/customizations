@@ -1,1 +1,5 @@
-Arquivos de customização de programas
+# Customizations
+Some customization of some useful tools.
+
+#### bash
+#### vim
