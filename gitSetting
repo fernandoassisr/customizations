@@ -1,0 +1,8 @@
+export GIT_AUTHOR_NAME='Fernando de Assis'
+export GIT_AUTHOR_EMAIL='fernandoassissr@gmail.com'
+export GIT_COMMITTER_NAME='Fernando de Assis'
+export GIT_COMMITTER_EMAIL='fernandoassissr@gmail.com'
+
+# Github credentials
+export GITHUB_USER='fernandoassisr'
+export GITHUB_TOKEN='
