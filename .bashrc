@@ -120,6 +120,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#if [ -x /usr/bin/mint-fortune ]; then
-#     /usr/bin/mint-fortune
-#fi
+if [ -x /usr/bin/mint-fortune ]; then
+     /usr/bin/mint-fortune
+fi
+
+export PS1='\[\e]0;\u@\h \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]>\[\033[00m\] \[\033[01;34m\]' 
