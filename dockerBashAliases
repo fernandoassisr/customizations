@@ -1,0 +1,7 @@
+# Put this on your Bashrc or import this file in
+docker() {
+    if [[ $@ == "--stop-all" ]]; then
+        command docker stop $(docker ps -a -q);
+    else
+        command docker "$@"; fi;
+}
