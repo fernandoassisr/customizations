@@ -124,4 +124,4 @@ if [ -x /usr/bin/mint-fortune ]; then
      /usr/bin/mint-fortune
 fi
 
-export PS1='\[\e]0;\u@\h \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]>\[\033[00m\] \[\033[01;34m\]' 
+export PS1="\[\033[38;5;121m\]\u\[$(tput sgr0)\]\[\033[38;5;115m\]@\h\[$(tput sgr0)\]\[\033[38;5;75m\][\[$(tput sgr0)\]\[\033[38;5;1m\]\W\[$(tput sgr0)\]\[\033[38;5;75m\]]\[$(tput sgr0)\]\[\033[38;5;10m\]:\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;2m\]>\[$(tput sgr0)\]"
