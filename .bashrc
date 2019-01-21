@@ -125,3 +125,13 @@ if [ -x /usr/bin/mint-fortune ]; then
 fi
 
 export PS1="\[\033[38;5;121m\]\u\[$(tput sgr0)\]\[\033[38;5;115m\]@\h\[$(tput sgr0)\]\[\033[38;5;75m\][\[$(tput sgr0)\]\[\033[38;5;1m\]\W\[$(tput sgr0)\]\[\033[38;5;75m\]]\[$(tput sgr0)\]\[\033[38;5;10m\]:\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;2m\]>\[$(tput sgr0)\]"
+
+# lets make cd in something more usefull for my style
+function cd {
+  builtin cd "$@" && if [ ! -d .git ]; then
+       pwd
+    else
+        git branch
+        git status -s
+    fi
+}
